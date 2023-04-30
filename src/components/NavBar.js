@@ -2,7 +2,43 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
-  return <div>{/*{code here}*/}</div>;
-}
+    return ( <
+        div className = "navbar" > { /*{code here}*/ } <
+        NavLink to = "/"
+        activeStyle = {
+            {
+                background: "darkblue",
+            }
+        } > Home < /NavLink> <
+        NavLink to = "/movies"
+        activeStyle = {
+            {
+                background: "darkblue",
+            }
+        } > Movies < /NavLink>
 
-export default NavBar;
+        <
+        NavLink to = "/directors"
+        activeStyle = {
+            {
+                background: "darkblue",
+            }
+        } >
+        Directors <
+        /NavLink>
+
+        <
+        NavLink to = "/actors"
+        activeStyle = {
+            {
+                background: "darkblue",
+            }
+        } >
+        Actors <
+        /NavLink>
+
+        <
+        /div>);
+    }
+
+    export default NavBar;
